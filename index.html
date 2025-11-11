@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criação de Conta</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <form id="formCadastro">
+    <h2>Crie sua Conta</h2>
+
+    <label for="nome">Nome Completo:</label>
+    <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo">
+    <p class="msg-erro" id="respnome"></p>
+
+    <label for="email">E-mail:</label>
+    <input id="email" name="email" type="email" placeholder="exemplo@gmail.com">
+    <p class="msg-erro" id="respemail"></p>
+
+    <label for="senha">Senha:</label>
+    <input id="senha" name="senha" type="password" placeholder="Digite sua senha">
+    <p class="msg-erro" id="respsenha"></p>
+
+    <label for="confsenha">Confirmar Senha:</label>
+    <input id="confsenha" name="confsenha" type="password" placeholder="Confirme sua senha">
+    <p class="msg-erro" id="respconfsenha"></p>
+
+    <label for="cpf">CPF:</label>
+    <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" maxlength="14">
+    <p class="msg-erro" id="respcpf"></p>
+
+    <label for="nascimento">Data de Nascimento:</label>
+    <input id="nascimento" name="nascimento" type="date">
+    <p class="msg-erro" id="respnascimento"></p>
+
+    <div class="termos">
+      <input type="checkbox" id="termos" name="termos">
+      <label for="termos">
+        Eu li e aceito os <a href="termos.html" target="_blank">Termos de Uso</a>.
+      </label>
+    </div>
+    <p class="msg-erro" id="resptermos"></p>
+
+    <button id="btnCriar" type="submit" disabled>Criar Conta</button>
+  </form>
+
+  <script src="./arquivo.js"></script>
+</body>
+</html>
+

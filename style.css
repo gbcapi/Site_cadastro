@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .termos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .termos input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+  }
+  
+  .termos label {
+    font-weight: normal;
+    margin: 0;
+  }
+
+  input.valido {
+    border-color: #28a745 !important; /* Verde */
+  }
+  
+  input.erro {
+    border-color: #dc3545 !important; /* Vermelho */
+  }
+  
+  .msg-erro {
+    color: #dc3545;
+    font-size: 0.9em;
+    height: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .msg-erro:not(:empty) {
+    opacity: 1;
+  }
+  
